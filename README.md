@@ -68,27 +68,31 @@ flutter build windows   # 或 flutter build linux
 
 ## 📂 项目结构概览
 
+项目目录位于 `simpledrop/`，其下包含核心源码：
+
 ```
-lib/
-├── main.dart
-├── ui/
-│   └── home_page.dart
-├── services/
-│   ├── file_sender.dart
-│   ├── file_receiver.dart
-│   └── discovery_service.dart
-└── utils/
-    └── permission_helper.dart
+simpledrop/
+└── lib/
+    ├── main.dart
+    ├── ui/
+    │   ├── home_page.dart
+    │   └── receiver_dialog.dart
+    ├── services/
+    │   ├── file_sender.dart
+    │   ├── file_receiver.dart
+    │   └── discovery_service.dart
+    └── utils/
+        └── permission_helper.dart
 ```
 
 ---
 
 ## 🧪 开发计划（Codex 跟踪中）
 
-* [ ] 完成基础 UI 和布局
-* [ ] 文件发送与接收逻辑实现
+* [x] 完成基础 UI 和布局
+* [x] 文件发送与接收逻辑实现
 * [ ] 局域网设备自动发现
-* [ ] 权限适配（Android/iOS）
+* [x] 权限适配（Android/iOS）
 * [ ] 跨平台构建与打包测试
 * [ ] 支持多文件批量发送
 * [ ] 文件传输加密（可选）
